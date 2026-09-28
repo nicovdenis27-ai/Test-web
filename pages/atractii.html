@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atracții – Orhei</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css/style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo" onclick="showPage('acasa')">
+      <span class="logo-icon">⚜</span>
+      <div>
+        <span>Orhei</span>
+        <span class="logo-sub">Republica Moldova</span>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <button class="nav-link"               onclick="showPage('acasa')"    id="nav-acasa">Acasă</button>
+      <button class="nav-link"               onclick="showPage('istorie')"  id="nav-istorie">Istorie</button>
+      <button class="nav-link active"        onclick="showPage('atractii')" id="nav-atractii">Atracții</button>
+      <button class="nav-link"               onclick="showPage('galerie')"  id="nav-galerie">Galerie</button>
+      <button class="nav-link nav-cta"       onclick="showPage('contact')" id="nav-contact">Contact</button>
+    </nav>
+  </div>
+</header>
+
+<div id="page-atractii" class="page active">
+ 
+  <div style="background:linear-gradient(135deg,#1a0f0f 0%,var(--red) 100%);color:white;padding:100px 0 60px;text-align:center;border-bottom:5px solid var(--gold);" id="pageHeroParticles" style="position:relative;overflow:hidden;">
+    <div class="container" style="position:relative;z-index:2;">
+      <span style="font-size:.75rem;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.6);">Descoperă Orhei</span>
+      <h1 style="font-size:3.5rem;margin:12px 0;">Atracțiile Orheiului</h1>
+      <p style="font-size:1.1rem;opacity:.85;max-width:600px;margin:0 auto;">Locuri care merită vizitate, amintiri care rămân pe viață</p>
+    </div>
+  </div>
+ 
+  <!-- INTRO ATRACTII -->
+  <section class="section">
+    <div class="container">
+      <div class="attractions-intro">
+        <div class="reveal-l">
+          <span class="section-label">De ce să vizitezi</span>
+          <h2 class="section-title">Un Oraș, O Mie de Povești</h2>
+          <p>Orhei oferă vizitatorilor o experiență turistică completă — de la situri arheologice de importanță europeană la mănăstiri spectaculoase, de la peisaje naturale de basm la o gastronomie locală autentică.</p>
+          <p>Fiecare vizită la Orhei este o călătorie în timp — înainte cu câteva secole, pe urmele dacilor, moldovenilor medievali și ale călugarilor rupestri.</p>
+        </div>
+        <div class="reveal-r" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+          <div style="background:var(--red);color:white;padding:24px;text-align:center;">
+            <div style="font-size:2rem;font-weight:900;font-family:'Playfair Display',serif;">4+</div>
+            <div style="font-size:.75rem;text-transform:uppercase;letter-spacing:1px;opacity:.8;">Atracții majore</div>
+          </div>
+          <div style="background:var(--gold);color:var(--dark);padding:24px;text-align:center;">
+            <div style="font-size:2rem;font-weight:900;font-family:'Playfair Display',serif;">12</div>
+            <div style="font-size:.75rem;text-transform:uppercase;letter-spacing:1px;">Monumente istorice</div>
+          </div>
+          <div style="background:var(--dark);color:white;padding:24px;text-align:center;">
+            <div style="font-size:2rem;font-weight:900;font-family:'Playfair Display',serif;">50k+</div>
+            <div style="font-size:.75rem;text-transform:uppercase;letter-spacing:1px;opacity:.8;">Turiști / an</div>
+          </div>
+          <div style="background:var(--soft);padding:24px;text-align:center;">
+            <div style="font-size:2rem;font-weight:900;font-family:'Playfair Display',serif;color:var(--red);">360°</div>
+            <div style="font-size:.75rem;text-transform:uppercase;letter-spacing:1px;color:var(--light);">Peisaje panoramice</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ORHEIUL VECHI -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="attraction-featured reveal">
+        <div class="attr-img attr-img-1">
+          <img src="../images/complex-orheiul-vechi.jpg" alt="complex-orheiul-vechi">
+          <div class="attr-img-label">Patrimoniu Național</div>
+        </div>
+        <div class="attr-body">
+          <div class="attr-tag">⭐ Atracția #1 din Moldova</div>
+          <h2 id="complex-orheiul-vechi">Complexul Orheiul Vechi</h2>
+          <p>Orheiul Vechi este cel mai important sit muzeo-rezervație din Republica Moldova — un loc unde civilizațiile și-au lăsat amprenta de mii de ani, în straturi de cultură și credință.</p>
+          <p>Situated pe o peninsulă dramatică înconjurată de meandrul Răutului, complexul îmbină vestigii din mai multe epoci: urmele cetății geto-dacice, construcțiile medievale tătaro-mongole, baia turcă din sec. XIII–XIV și mănăstirea rupestră ortodoxă din sec. XVI.</p>
+          <ul class="attr-highlights">
+            <li><span>⛏️</span><span>Mănăstire rupestră săpată în stâncă (sec. XIII–XIV)</span></li>
+            <li><span>🏰</span><span>Cetate medievală cu turnuri de apărare</span></li>
+            <li><span>🏺</span><span>Muzeu de arheologie cu exponate rare</span></li>
+            <li><span>🥾</span><span>Trasee turistice marcate în natură</span></li>
+            <li><span>📸</span><span>Priveliști panoramice spectaculoase</span></li>
+          </ul>
+          <div class="attr-info-chips">
+            <span class="chip">📍 60 km de Chișinău</span>
+            <span class="chip">🕐 9:00 – 18:00</span>
+            <span class="chip">🚶 Acces pietonal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- MANASTIRE CURCHI -->
+  <section class="section">
+    <div class="container">
+      <div class="attraction-featured reveal">
+        <div class="attr-img attr-img-2">
+          <img src="../images/manastirea-curchi.jpg" alt="manastirea-curchi">
+          <div class="attr-img-label">Loc de Pelerinaj</div>
+        </div>
+        <div class="attr-body">
+          <div class="attr-tag">🕌 Cel mai frumos complex monastic</div>
+          <h2 id="manastirea-curchi">Mănăstirea Curchi</h2>
+          <p>Unul dintre cele mai grandioase și bine conservate ansambluri monastice din Moldova. Situată în mijlocul unei păduri de fag, la aproximativ 12 km de Orhei, mănăstirea îți taie respirația prin măreția ei.</p>
+          <p>Fondată în <strong>1773</strong> și renovată major între 1835–1868, mănăstirea reunește mai multe biserici în stil neoclasic și baroc rusesc, cu picturi murale valoroase și decoruri interioare bogate. Este un loc activ de viață monahală și pelerinaj religios.</p>
+          <ul class="attr-highlights">
+            <li><span>🏛️</span><span>Arhitectură neoclasică și baroc rusesc impresionantă</span></li>
+            <li><span>🎨</span><span>Picturi murale și icoane valoroase</span></li>
+            <li><span>🌲</span><span>Pădure de fag cu sentiere de meditație</span></li>
+            <li><span>🕯️</span><span>Slujbe religioase deschise vizitatorilor</span></li>
+          </ul>
+          <div class="attr-info-chips">
+            <span class="chip">📍 12 km de Orhei</span>
+            <span class="chip">🕐 7:00 – 20:00</span>
+            <span class="chip">🅿️ Parcare gratuită</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- RAUT -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="attraction-featured reveal">
+        <div class="attr-img attr-img-3">
+          <img src="../images/raul-raut-atractii.jpg" alt="raul-raut-atractii">
+          <div class="attr-img-label">Turism Ecologic</div>
+        </div>
+        <div class="attr-body">
+          <div class="attr-tag">🌿 Natură spectaculoasă</div>
+          <h2>Râul Răut & Peisajul Natural</h2>
+          <p>Râul Răut, cel mai lung afluent al Nistrului (~286 km), este sufletul natural al ținutului orheian. Meandrul spectaculos din zona Orheiului Vechi creează una dintre cele mai frumoase priveliști din Moldova.</p>
+          <p>Stâncile calcaroase înalte de pe maluri, acoperite cu vegetație rară, adăpostesc colonii de lăstuni și reprezintă un ecosistem unic. Văile fertile de pe malul opus, cu sate pictorești, completează tabloul unui peisaj de poveste.</p>
+          <ul class="attr-highlights">
+            <li><span>🥾</span><span>Drumeții pe traseele marcate de pe maluri</span></li>
+            <li><span>🦅</span><span>Observarea păsărilor rare și a faunei locale</span></li>
+            <li><span>🎣</span><span>Pescuit sportiv în apele cristaline</span></li>
+            <li><span>📷</span><span>Fotografie de natură și peisaj</span></li>
+            <li><span>🚣</span><span>Turism nautic pe cursul liniștit al râului</span></li>
+          </ul>
+          <div class="attr-info-chips">
+            <span class="chip">📏 ~286 km lungime</span>
+            <span class="chip">♾️ Acces liber</span>
+            <span class="chip">🌄 Răsărit spectaculos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- CULTURA -->
+  <section class="section">
+    <div class="container">
+      <div class="attraction-featured reveal">
+        <div class="attr-img attr-img-4">
+          <img src="../images/palatul-de-cultura-orhei.webp" alt="palatul-de-cultura-orhei">
+          <div class="attr-img-label">Cultură Vie</div>
+        </div>
+        <div class="attr-body">
+          <div class="attr-tag">🎶 Viața culturală orheienă</div>
+          <h2>Cultură & Viață Locală</h2>
+          <p>Orhei dispune de o infrastructură culturală activă și diversă, reflectând spiritul moldovenesc autentic. Casa de Cultură „Nicolae Sulac", Muzeul de Istorie și Etnografie și centralele biblioteci sunt inima vieții intelectuale locale.</p>
+          <p>Pe tot parcursul anului, orașul găzduiește festivaluri de folclor, expoziții de artă plastică, concerte, spectacole de teatru și evenimente comunitare care păstrează tradițiile vii și animă viața urbană.</p>
+          <ul class="attr-highlights">
+            <li><span>🏛️</span><span>Casa de Cultură „Nicolae Sulac"</span></li>
+            <li><span>🏺</span><span>Muzeul de Istorie și Etnografie Orhei</span></li>
+            <li><span>🎪</span><span>Festivaluri anuale de folclor și tradiții</span></li>
+            <li><span>🎨</span><span>Galerii de artă și ateliere artizanale</span></li>
+          </ul>
+          <div class="attr-info-chips">
+            <span class="chip">🎟️ Bilete accesibile</span>
+            <span class="chip">👨‍👩‍👧 Programe pentru copii</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- MINI ATRACTII -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="centered">
+        <span class="section-label">Mai mult de descoperit</span>
+        <h2 class="section-title centered">Și Altele…</h2>
+      </div>
+      <div class="mini-attractions" style="margin-top:40px;">
+        <div class="mini-card reveal">
+          <div class="mini-thumb mini-t1">
+            <img src="../images/biserica-sf-dumitru.jpg" alt="biserica-sf-dumitru">
+          </div>
+          <div class="mini-body">
+            <h3 id="biserica-sf-dumitru">Biserica Sf. Dumitru</h3>
+            <p>Monument de arhitectură din sec. XIX, cu elemente neoclasice și iconostas valoros. Situată în centrul vechi al orașului.</p>
+          </div>
+        </div>
+        <div class="mini-card reveal">
+          <div class="mini-thumb mini-t2">💧</div>
+          <div class="mini-body">
+            <h3 id="turnul-de-apa">Turnul de Apă (sec. XIX)</h3>
+            <p>Construcție tehnică de epocă, devenită simbol al orașului. Restaurat recent, oferă o priveliște panoramică asupra Orheiului.</p>
+          </div>
+        </div>
+        <div class="mini-card reveal">
+          <div class="mini-thumb mini-t3">
+            <img src="../images/centrul-vechi-al-orasului.jpg" alt="centrul-vechi-al-orasului">
+          </div>
+          <div class="mini-body">
+            <h3 id="centrul-vechi-al-orasului">Centrul Vechi al Orașului</h3>
+            <p>Clădiri cu arhitectură de epocă, piața centrală animată, cafenele și restaurante cu specific local, atmosferă unică moldovenească.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- PRACTICAL INFO -->
+  <section class="section">
+    <div class="container">
+      <div class="centered reveal">
+        <span class="section-label">Informații practice</span>
+        <h2 class="section-title centered">Cum să Vizitezi Orhei</h2>
+      </div>
+      <div class="practical-grid" style="margin-top:40px;">
+        <div class="practical-card reveal">
+          <h3>🚗 Cum Ajungi</h3>
+          <div class="practical-item"><span>🚌</span><div><strong>Cu autobuzul</strong><p>Autobuze frecvente din Chișinău (Stația Centrală), călătorie ~1 oră</p></div></div>
+          <div class="practical-item"><span>🚗</span><div><strong>Cu mașina</strong><p>Traseul M2 (Chișinău–Bălți), ~40 km nord. Parcare disponibilă în centru</p></div></div>
+          <div class="practical-item"><span>🚕</span><div><strong>Cu taxiul/rideshare</strong><p>~30–40 min din Chișinău, tarif estimativ 150–200 MDL</p></div></div>
+        </div>
+        <div class="practical-card reveal">
+          <h3>🕐 Program Atracții</h3>
+          <div class="practical-item"><span>🗿</span><div><strong>Orheiul Vechi</strong><p>Zilnic 09:00–18:00 (mai–oct), 10:00–16:00 (nov–apr)</p></div></div>
+          <div class="practical-item"><span>⛪</span><div><strong>Mănăstirea Curchi</strong><p>Zilnic 07:00–20:00, slujbe la 08:00 și 17:00</p></div></div>
+          <div class="practical-item"><span>🏺</span><div><strong>Muzeul de Etnografie</strong><p>Mar–Dum 09:00–17:00, Lun — închis</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+</div><!-- /page-atractii -->
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">⚜ Orhei</span>
+        <p>Orhei — reședință de raion în Republica Moldova, situat pe malul râului Răut, la 40 km nord de Chișinău. Un oraș cu over 600 de ani de istorie, patrimoniu cultural excepțional și oameni primitori.</p>
+        <div class="footer-social">
+          <div class="social-btn">
+            <a href="https://r.mtdv.me/videos/politica-de-cnof">📘</a>
+          </div>
+          <div class="social-btn">
+            <a href="https://r.mtdv.me/videos/politica-de-cnof">📸</a>
+          </div>
+          <div class="social-btn">
+            <a href="https://r.mtdv.me/videos/politica-de-cnof">🐦</a>
+          </div>
+          <div class="social-btn">
+            <a href="https://r.mtdv.me/videos/politica-de-cnof">▶️</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigare</h4>
+        <ul>
+          <li><button onclick="showPage('acasa')">Acasă</button></li>
+          <li><button onclick="showPage('istorie')">Istorie</button></li>
+          <li><button onclick="showPage('atractii')">Atracții</button></li>
+          <li><button onclick="showPage('galerie')">Galerie Foto</button></li>
+          <li><button onclick="showPage('contact')">Contact</button></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Atracții</h4>
+        <ul>
+          <li><button onclick="showPage('atractii')">Orheiul Vechi</button></li>
+          <li><button onclick="showPage('atractii')">Mănăstirea Curchi</button></li>
+          <li><button onclick="showPage('atractii')">Râul Răut</button></li>
+          <li><button onclick="showPage('atractii')">Cultura & Arte</button></li>
+          <li><button onclick="showPage('atractii')">Gastronomie locală</button></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Rapid</h4>
+        <div class="footer-contact-item"><span>📍</span><span>Orhei, MD-3500</span></div>
+        <div class="footer-contact-item"><span>📞</span><span>+373 235 2-XX-XX</span></div>
+        <div class="footer-contact-item"><span>✉️</span><span>info@orhei.md</span></div>
+        <div class="footer-contact-item"><span>🌐</span><span>www.orhei.md</span></div>
+        <div style="margin-top:20px;">
+          <button onclick="showPage('contact')" style="background:var(--red);color:white;border:none;padding:10px 20px;cursor:pointer;font-family:'Lato',sans-serif;font-weight:700;font-size:.82rem;text-transform:uppercase;letter-spacing:1px;">Contactează-ne →</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Orhei – Localitatea mea de baștință. Proiect școlar.</span>
+      <div class="footer-bottom-links">
+        <button>Politică de confidențialitate</button>
+        <button>Termeni și condiții</button>
+        <button>Hartă site</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../javascript/script.js"></script>
+</body>
+</html>

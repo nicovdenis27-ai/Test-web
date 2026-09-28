@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Istorie – Orhei</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css/style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo" onclick="showPage('acasa')">
+      <span class="logo-icon">⚜</span>
+      <div>
+        <span>Orhei</span>
+        <span class="logo-sub">Republica Moldova</span>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <button class="nav-link"               onclick="showPage('acasa')"    id="nav-acasa">Acasă</button>
+      <button class="nav-link active"        onclick="showPage('istorie')"  id="nav-istorie">Istorie</button>
+      <button class="nav-link"               onclick="showPage('atractii')" id="nav-atractii">Atracții</button>
+      <button class="nav-link"               onclick="showPage('galerie')"  id="nav-galerie">Galerie</button>
+      <button class="nav-link nav-cta"       onclick="showPage('contact')" id="nav-contact">Contact</button>
+    </nav>
+  </div>
+</header>
+
+<div id="page-istorie" class="page active">
+ 
+  <div style="background:linear-gradient(135deg,var(--red) 0%,#7a0000 100%);color:white;padding:100px 0 60px;text-align:center;border-bottom:5px solid var(--gold);" id="pageHeroParticles" style="position:relative;overflow:hidden;">
+    <div class="container" style="position:relative;z-index:2;">
+      <span style="font-size:.75rem;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.6);">Orhei · Republica Moldova</span>
+      <h1 style="font-size:3.5rem;margin:12px 0;">Istoria Orașului Orhei</h1>
+      <p style="font-size:1.1rem;opacity:.85;max-width:600px;margin:0 auto;">De la primii locuitori preistorici până la capitala modernă a raionului — o poveste de peste 600 de ani</p>
+    </div>
+  </div>
+ 
+  <!-- INTRO ISTORIE -->
+  <section class="section">
+    <div class="container">
+      <div class="history-intro">
+        <div>
+          <span class="section-label">Origini</span>
+          <h2 class="section-title">O Istorie Stratificată</h2>
+          <p class="reveal">Zona Orheiului este locuită din timpuri preistorice. Cercetările arheologice au demonstrat prezența omului pe aceste meleaguri din <strong>epoca bronzului</strong>. Geto-dacii au lăsat urme clare ale civilizației lor în zona Văii Răutului, iar în epoca romană aceasta reprezenta o zonă de contact și comerț cu Imperiul.</p>
+          <p class="reveal">Descoperirile de la Orheiul Vechi atestă existența unui centru important de civilizație cu mii de ani în urmă — unelte de piatră și os, ceramică ornamentată, structuri de locuit și obiecte de cult, toate mărturii ale unor comunități organizate și prospere.</p>
+          <p class="reveal">Amplasamentul strategic pe peninsula formată de meandrul Răutului a atras succesiv getodaci, romani, slavi, tătari și moldoveni — fiecare lăsând un strat distinctiv în istoria locului.</p>
+        </div>
+        <div class="history-intro pullquote reveal-r" style="font-size:1.4rem;color:var(--dark);font-style:italic;font-family:'Playfair Display',serif;line-height:1.5;padding:30px;background:var(--soft);border-left:5px solid var(--gold);position:sticky;top:100px;">
+          „Orheiul este o carte de istorie vie — fiecare strat de pământ spune o altă poveste, fiecare piatră a văzut un alt veac."
+          <cite style="display:block;font-size:.8rem;margin-top:14px;color:var(--light);font-style:normal;letter-spacing:1px;text-transform:uppercase;">— Cercetător arheolog</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- EPOCHS TABS -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="centered">
+        <span class="section-label">Epoci istorice</span>
+        <h2 class="section-title centered">Prin Veacuri</h2>
+      </div>
+      <div style="margin-top:40px;">
+        <div class="epochs-tabs">
+          <button class="epoch-tab active" onclick="showEpoch('preistorie',this)">Preistorie</button>
+          <button class="epoch-tab" onclick="showEpoch('medieval',this)">Ev Mediu</button>
+          <button class="epoch-tab" onclick="showEpoch('modern',this)">Epoca Modernă</button>
+          <button class="epoch-tab" onclick="showEpoch('contemporan',this)">Contemporan</button>
+        </div>
+        <div id="epoch-preistorie" class="epoch-panel active">
+          <div>
+            <h3>Preistorie & Antichitate</h3>
+            <p>Teritoriul actualului Orhei a fost locuit neîntrerupt din <strong>neolitic</strong>. Cercetările din zona Orheiului Vechi au scos la lumină ceramică pictată, unelte de silex și bronz, și urmele unor locuințe din epoca fierului.</p>
+            <p>Geto-dacii au ridicat pe peninsula Răutului un important centru tribal — vestigii ale zidurilor de apărare, atelierelor meșteșugărești și sanctuarelor religioase atestă o civilizație complexă.</p>
+            <p>În epoca romană, zona era un nod comercial pe ruta ce lega coloniile pontice de interiorul carpatic. Monede romane și obiecte de import descoperite confirmă aceste schimburi.</p>
+            <ul class="epoch-facts">
+              <li>
+                <a href="https://ro.wikipedia.org/wiki/Trebujeni,_Orhei">Ceramică neolitică descoperită la Trebujeni</a>
+              </li>
+              <li>
+                <a href="https://ro.wikipedia.org/wiki/Cetatea_Orhei">Cetățuie getică pe peninsula Răutului (sec. IV–II î.Hr.)</a>
+              </li>
+              <li>
+                <a href="https://ro.wikipedia.org/wiki/Moned%C4%83_roman%C4%83">Monede romane din sec. I–III d.Hr.</a>
+              </li>
+              <li>
+                <a href="https://ro.wikipedia.org/wiki/Cultura_%C8%99i_civiliza%C8%9Bia_dacic%C4%83">Ateliere meșteșugărești daco-getice</a>
+              </li>
+            </ul>
+          </div>
+          <div class="epoch-img epoch-img-1">
+            <img src="../images/preistorie.jpg" alt="preistorie">
+          </div>
+        </div>
+        <div id="epoch-medieval" class="epoch-panel">
+          <div>
+            <h3>Evul Mediu & Statul Moldovenesc</h3>
+            <p>În <strong>1421</strong> apare prima atestare documentară a Orheiului ca târg și cetate pe malul Răutului. Cetatea a servit ca punct strategic de apărare împotriva invaziilor tătarilor și otomanilor.</p>
+            <p>Domnia lui <strong>Vasile Lupu</strong> (1634–1653) aduce o epocă de aur — construcții majore, rute comerciale dezvoltate și înflorire culturală fără precedent. Mănăstirea rupestră de la Orheiul Vechi este construită în această perioadă.</p>
+            <ul class="epoch-facts">
+              <li>
+                <a href="https://ro.wikipedia.org/wiki/Orhei">Prima atestare documentară (1421)</a>
+              </li>
+              <li>
+                <a href="https://ro.wikipedia.org/wiki/Cetatea_Orhei">Cetatea medievală cu turnuri de apărare</a>
+              </li>
+              <li>
+                <a href="https://ro.wikipedia.org/wiki/Vasile_Lupu">Domnia lui Vasile Lupu (1634–1653)</a>
+              </li>
+              <li>
+                <a href="https://ro.wikipedia.org/wiki/M%C4%83n%C4%83stirea_rupestr%C4%83_a_p%C3%A2rc%C4%83labului_Bosie">Construcția mănăstirii rupestre (sec. XVI)</a>
+              </li>
+            </ul>
+          </div>
+          <div class="epoch-img epoch-img-2">
+            <img src="../images/evul-mediu.jpg" alt="evul-mediu">
+          </div>
+        </div>
+        <div id="epoch-modern" class="epoch-panel">
+          <div>
+            <h3>Epoca Modernă (sec. XIX–XX)</h3>
+            <p>În <strong>1812</strong>, odată cu anexarea Basarabiei de către Imperiul Rus, Orhei devine reședința județului cu același nume. Apar construcții în stil neoclasic rus, se pavează străzi și se construiesc instituții publice.</p>
+            <p>În <strong>1918</strong>, Orhei devine parte a Regatului României după Unire. Perioada interbelică aduce modernizare, școli, spitale și o viață culturală efervescentă.</p>
+            <ul class="epoch-facts">
+              <li>
+                <a href="https://ro.wikipedia.org/wiki/Tratatul_de_la_Bucure%C8%99ti_(1812)">1812 — Anexarea la Imperiul Rus</a>
+              </li>
+              <li>
+                <a href="https://ro.wikipedia.org/wiki/Mănăstirea_Curchi">Construcția Mănăstirii Curchi (1773, renovată 1835–1868)</a>
+              </li>
+              <li>
+                <a href="https://ro.wikipedia.org/wiki/Unirea_Basarabiei_cu_România">1918 — Unirea cu România</a>
+              </li>
+              <li>
+                <a href="https://ro.wikipedia.org/wiki/Lista_monumentelor_ocrotite_de_stat_din_raionul_Orhei">Turnul de apă și clădirile neoclasice (sec. XIX)</a>
+              </li>
+            </ul>
+          </div>
+          <div class="epoch-img epoch-img-3">
+            <img src="../images/epoca-moderna.jpg" alt="epoca-moderna">
+          </div>
+        </div>
+        <div id="epoch-contemporan" class="epoch-panel">
+          <div>
+            <h3>Epoca Contemporană (1940–prezent)</h3>
+            <p>Perioada sovietică (1940–1991) aduce industrializare forțată și transformări urbane profunde. Populația crește, apar întreprinderi industriale, blocuri de locuințe și infrastructură modernă.</p>
+            <p>Din <strong>1991</strong>, Orhei devine raion al Republicii Moldova independente. Are loc o redescoperire a patrimoniului cultural, restaurarea monumentelor istorice și dezvoltarea turismului.</p>
+            <ul class="epoch-facts">
+              <li>
+                <a href="https://ro.wikipedia.org/wiki/Orhei">1940–1991 — Perioada sovietică</a>
+              </li>
+              <li>
+                <a href="https://ro.wikipedia.org/wiki/Republica_Moldova">1991 — Republica Moldova independentă</a>
+              </li>
+              <li>
+                <a href="https://ro.wikipedia.org/wiki/Orheiul_Vechi">Restaurarea Orheiului Vechi (2000–prezent)</a>
+              </li>
+              <li>
+                <a href="https://ro.wikipedia.org/wiki/Parcul_Na%C8%9Bional_Orhei">Dezvoltarea turismului cultural și ecologic</a>
+              </li>
+            </ul>
+          </div>
+          <div class="epoch-img epoch-img-4">
+            <img src="../images/contemporan.jpg" alt="contemporan">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- TIMELINE -->
+  <section class="section">
+    <div class="container">
+      <div class="centered">
+        <span class="section-label">Cronologie</span>
+        <h2 class="section-title centered">Momentele Cheie</h2>
+        <p class="section-desc">Evenimentele care au modelat destinul orașului de-a lungul veacurilor</p>
+      </div>
+      <div class="timeline-wrap">
+        <div class="tl-item">
+          <div class="tl-content">
+            <div class="tl-year">Sec. XIII–XIV</div>
+            <h3>Ocupația Tătaro-Mongolă</h3>
+            <p>Hoardele tătaro-mongole ocupă și reorganizează zona; apar primele urme ale așezărilor medievale. Perioada marchează o transformare profundă a structurii demografice.</p>
+          </div>
+          <div class="tl-dot">🏹</div>
+          <div class="tl-empty"></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-empty"></div>
+          <div class="tl-dot">📜</div>
+          <div class="tl-content">
+            <div class="tl-year">1421</div>
+            <h3>Prima Atestare Documentară</h3>
+            <p>Orhei este menționat pentru prima dată în documente oficiale ca târg și cetate a Moldovei medievale, pe drumul comercial ce lega Iașul de Cetatea Albă.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-content">
+            <div class="tl-year">Sec. XVI</div>
+            <h3>Înflorire Spirituală</h3>
+            <p>Construcția mănăstirii rupestre de la Orheiul Vechi; călugări ortodocși sapă chilii și o biserică în stâncile calcaroase, creând un monument unic al credinței.</p>
+          </div>
+          <div class="tl-dot">⛪</div>
+          <div class="tl-empty"></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-empty"></div>
+          <div class="tl-dot">👑</div>
+          <div class="tl-content">
+            <div class="tl-year">1634–1653</div>
+            <h3>Domnia lui Vasile Lupu</h3>
+            <p>Epocă de aur pentru Moldova și implicit pentru Orhei — construcții majore, rute comerciale înfloritoare și o cultură de curte de nivel european.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-content">
+            <div class="tl-year">1773</div>
+            <h3>Fondarea Mănăstirii Curchi</h3>
+            <p>Unul dintre cele mai importante ansambluri monastice din Moldova este fondat în mijlocul pădurii, la 12 km de Orhei. Renovarea majoră din 1835–1868 îi conferă înfățișarea actuală.</p>
+          </div>
+          <div class="tl-dot">🕌</div>
+          <div class="tl-empty"></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-empty"></div>
+          <div class="tl-dot">🦅</div>
+          <div class="tl-content">
+            <div class="tl-year">1918</div>
+            <h3>Unirea cu România</h3>
+            <p>Orhei devine parte a județului Orhei din Regatul României. Urmează o perioadă de modernizare intensă — școli, spitale, drumuri și o efervescență culturală remarcabilă.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-content">
+            <div class="tl-year">1940–1991</div>
+            <h3>Perioada Sovietică</h3>
+            <p>Industrializare accelerată și transformare urbană profundă. Apar blocuri de locuințe, fabrici și instituții de tip sovietic. Tradițiile culturale sunt parțial suprimate.</p>
+          </div>
+          <div class="tl-dot">⚒️</div>
+          <div class="tl-empty"></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-empty"></div>
+          <div class="tl-dot">🌟</div>
+          <div class="tl-content">
+            <div class="tl-year">1991 – Prezent</div>
+            <h3>Independența & Renașterea</h3>
+            <p>Orhei devine raion al Republicii Moldova independente. Are loc o redescoperire a patrimoniului cultural — restaurări, muzee noi, turism în creștere și mândrie locală redobândită.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- PERSONALITIES -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="centered">
+        <span class="section-label">Fii ai orașului</span>
+        <h2 class="section-title centered">Personalități Marcante</h2>
+        <p class="section-desc">Orhei și împrejurimile au dat naștere unor personalități de prim rang ale culturii și istoriei moldovenești</p>
+      </div>
+      <div class="personalities-grid" style="margin-top:50px;">
+        <div class="person-card">
+          <div class="person-avatar">👑</div>
+          <h3>Vasile Lupu</h3>
+          <div class="person-role">Domn al Moldovei</div>
+          <p>Domn al Moldovei (1634–1653), a condus una dintre cele mai strălucite epoci ale principatului. Cunoscut pentru diplomație și mecenism cultural.</p>
+        </div>
+        <div class="person-card">
+          <div class="person-avatar">🎤</div>
+          <h3>Nicolae Sulac</h3>
+          <div class="person-role">Interpret Muzică Populară</div>
+          <p>Cel mai iubit interpret de muzică populară moldovenească, originar din zona Orheiului. Vocea sa a dus numele Moldovei în toată lumea.</p>
+        </div>
+        <div class="person-card">
+          <div class="person-avatar">✍️</div>
+          <h3>Ion Druță</h3>
+          <div class="person-role">Scriitor & Dramaturg</div>
+          <p>Unul dintre cei mai importanți scriitori moldoveni ai sec. XX. Operele sale — „Frunze de dor", „Povara bunătății noastre" — sunt capodopere ale literaturii române.</p>
+        </div>
+        <div class="person-card">
+          <div class="person-avatar">🎵</div>
+          <h3>Eugeniu Doga</h3>
+          <div class="person-role">Compozitor</div>
+          <p>Compozitor de renume mondial, autorul celebrului vals din filmul „Gingașa și tandra mea fiară". Muzica sa a cucerit milioane de inimi pe toate continentele.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- RESURSE -->
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;" class="reveal">
+        <div>
+          <span class="section-label">Documentare suplimentară</span>
+          <h2 class="section-title">Surse & Resurse</h2>
+          <p style="color:var(--light);margin-bottom:20px;">Pentru aprofundarea studiului istoriei Orheiului și Republicii Moldova:</p>
+          <a href="https://ro.wikipedia.org/wiki/Orhei" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;color:var(--red);text-decoration:none;font-weight:700;font-size:.9rem;border-bottom:2px solid transparent;transition:var(--tr);margin-bottom:12px;padding:12px 0;">🌐 Wikipedia – Orhei (ro)</a><br>
+          <a href="https://orheiulvechi.com/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;color:var(--red);text-decoration:none;font-weight:700;font-size:.9rem;border-bottom:2px solid transparent;transition:var(--tr);margin-bottom:12px;padding:12px 0;">🏛 Orheiul Vechi – Site Oficial</a><br>
+          <a href="https://www.nationalmuseum.md" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;color:var(--red);text-decoration:none;font-weight:700;font-size:.9rem;border-bottom:2px solid transparent;transition:var(--tr);padding:12px 0;">🏺 Muzeul Național de Istorie a Moldovei</a>
+        </div>
+        <div style="background:var(--soft);padding:35px;border-left:5px solid var(--gold);">
+          <h3 style="margin-bottom:16px;font-size:1.3rem;">📚 Bibliografie Selectivă</h3>
+          <ul style="list-style:none;color:var(--light);font-size:.9rem;">
+            <li style="padding:10px 0;border-bottom:1px solid #ddd;">• Mihail Bruhis — <em>„Rusia, România și Basarabia"</em></li>
+            <li style="padding:10px 0;border-bottom:1px solid #ddd;">• Ion Niculiță — <em>„Tracii de nord"</em></li>
+            <li style="padding:10px 0;border-bottom:1px solid #ddd;">• Gheorghe Postica — <em>„Orheiul Vechi"</em></li>
+            <li style="padding:10px 0;">• Pavel Parasca — <em>„Istoria Moldovei medievale"</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+</div><!-- /page-istorie -->
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">⚜ Orhei</span>
+        <p>Orhei — reședință de raion în Republica Moldova, situat pe malul râului Răut, la 40 km nord de Chișinău. Un oraș cu over 600 de ani de istorie, patrimoniu cultural excepțional și oameni primitori.</p>
+        <div class="footer-social">
+          <div class="social-btn">
+            <a href="https://r.mtdv.me/videos/politica-de-cnof">📘</a>
+          </div>
+          <div class="social-btn">
+            <a href="https://r.mtdv.me/videos/politica-de-cnof">📸</a>
+          </div>
+          <div class="social-btn">
+            <a href="https://r.mtdv.me/videos/politica-de-cnof">🐦</a>
+          </div>
+          <div class="social-btn">
+            <a href="https://r.mtdv.me/videos/politica-de-cnof">▶️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigare</h4>
+        <ul>
+          <li><button onclick="showPage('acasa')">Acasă</button></li>
+          <li><button onclick="showPage('istorie')">Istorie</button></li>
+          <li><button onclick="showPage('atractii')">Atracții</button></li>
+          <li><button onclick="showPage('galerie')">Galerie Foto</button></li>
+          <li><button onclick="showPage('contact')">Contact</button></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Atracții</h4>
+        <ul>
+          <li><button onclick="showPage('atractii')">Orheiul Vechi</button></li>
+          <li><button onclick="showPage('atractii')">Mănăstirea Curchi</button></li>
+          <li><button onclick="showPage('atractii')">Râul Răut</button></li>
+          <li><button onclick="showPage('atractii')">Cultura & Arte</button></li>
+          <li><button onclick="showPage('atractii')">Gastronomie locală</button></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Rapid</h4>
+        <div class="footer-contact-item"><span>📍</span><span>Orhei, MD-3500</span></div>
+        <div class="footer-contact-item"><span>📞</span><span>+373 235 2-XX-XX</span></div>
+        <div class="footer-contact-item"><span>✉️</span><span>info@orhei.md</span></div>
+        <div class="footer-contact-item"><span>🌐</span><span>www.orhei.md</span></div>
+        <div style="margin-top:20px;">
+          <button onclick="showPage('contact')" style="background:var(--red);color:white;border:none;padding:10px 20px;cursor:pointer;font-family:'Lato',sans-serif;font-weight:700;font-size:.82rem;text-transform:uppercase;letter-spacing:1px;">Contactează-ne →</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Orhei – Localitatea mea de baștință. Proiect școlar.</span>
+      <div class="footer-bottom-links">
+        <button>Politică de confidențialitate</button>
+        <button>Termeni și condiții</button>
+        <button>Hartă site</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../javascript/script.js"></script>
+</body>
+</html>

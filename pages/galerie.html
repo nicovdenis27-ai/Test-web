@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie Foto – Orhei</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css/style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo" onclick="showPage('acasa')">
+      <span class="logo-icon">⚜</span>
+      <div>
+        <span>Orhei</span>
+        <span class="logo-sub">Republica Moldova</span>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <button class="nav-link"               onclick="showPage('acasa')"    id="nav-acasa">Acasă</button>
+      <button class="nav-link"               onclick="showPage('istorie')"  id="nav-istorie">Istorie</button>
+      <button class="nav-link"               onclick="showPage('atractii')" id="nav-atractii">Atracții</button>
+      <button class="nav-link active"        onclick="showPage('galerie')"  id="nav-galerie">Galerie</button>
+      <button class="nav-link nav-cta"       onclick="showPage('contact')" id="nav-contact">Contact</button>
+    </nav>
+  </div>
+</header>
+
+<div id="page-galerie" class="page active">
+ 
+  <div style="background:linear-gradient(135deg,#0f0f1a 0%,#1a1a40 100%);color:white;padding:100px 0 60px;text-align:center;border-bottom:5px solid var(--gold);" id="pageHeroParticles" style="position:relative;overflow:hidden;">
+    <div class="container" style="position:relative;z-index:2;">
+      <span style="font-size:.75rem;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.5);">Imagini din Orhei</span>
+      <h1 style="font-size:3.5rem;margin:12px 0;">Galerie Foto</h1>
+      <p style="font-size:1.1rem;opacity:.8;max-width:500px;margin:0 auto;">O colecție vizuală a frumuseții și istoriei Orheiului</p>
+    </div>
+  </div>
+ 
+  <section class="section">
+    <div class="container">
+ 
+      <!-- STATS -->
+      <div class="gallery-hero-stats">
+        <div class="g-stat reveal"><span class="g-stat-num">9+</span><span class="g-stat-lab">Fotografii selectate</span></div>
+        <div class="g-stat reveal"><span class="g-stat-num">5</span><span class="g-stat-lab">Categorii</span></div>
+        <div class="g-stat reveal"><span class="g-stat-num">600+</span><span class="g-stat-lab">Ani de Istorie</span></div>
+        <div class="g-stat reveal"><span class="g-stat-num">∞</span><span class="g-stat-lab">Amintiri</span></div>
+      </div>
+ 
+      <!-- FILTERS -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" onclick="filterGallery('toate',this)">🌐 Toate</button>
+        <button class="filter-btn" onclick="filterGallery('monumente',this)">🏛 Monumente</button>
+        <button class="filter-btn" onclick="filterGallery('natura',this)">🌿 Natură</button>
+        <button class="filter-btn" onclick="filterGallery('cultura',this)">🎭 Cultură</button>
+        <button class="filter-btn" onclick="filterGallery('viata',this)">🏘️ Viață</button>
+        <button class="filter-btn" onclick="filterGallery('scoala iubita',this)">🏫 Școala mea iubită</button>
+      </div>
+ 
+      <!-- MASONRY GRID -->
+      <div class="gallery-masonry" id="galleryGrid">
+        <div class="g-item tall" data-category="monumente" data-title="Orheiul Vechi" data-desc="Complexul rupestru medieval — inima istoriei orheiene">
+          <div class="g-inner gc1">
+            <img src="../images/orheiul-vechi.jpg" alt="orheiul-vechi">
+          </div>
+          <div class="g-category">Monumente</div>
+          <div class="g-caption"><h4>Orheiul Vechi</h4><p>Complexul rupestru medieval</p></div>
+        </div>
+        <div class="g-item" data-category="natura" data-title="Meandrul Răutului" data-desc="Priveliște spectaculoasă de pe stâncile calcaroase">
+          <div class="g-inner gc2">
+            <img src="../images/raul-raut.jpg" alt="raul-raut">
+          </div>
+          <div class="g-category">Natură</div>
+          <div class="g-caption"><h4>Meandrul Răutului</h4><p>Priveliște de pe stânci</p></div>
+        </div>
+        <div class="g-item" data-category="monumente" data-title="Mănăstirea Curchi" data-desc="Arhitectură neoclasică impresionantă în mijlocul pădurii">
+          <div class="g-inner gc3">
+            <img src="../images/manastirea-curchi.jpg" alt="manastirea-curchi">
+          </div>
+          <div class="g-category">Monumente</div>
+          <div class="g-caption"><h4>Mănăstirea Curchi</h4><p>Arhitectură neoclasică</p></div>
+        </div>
+        <div class="g-item wide" data-category="natura" data-title="Primăvara la Orhei" data-desc="Dealurile înflorite și câmpiile verzi ale ținutului orheian">
+          <div class="g-inner gc4">
+            <img src="../images/primavara-orhei.jpg" alt="primavara-orhei">
+          </div>
+          <div class="g-category">Natură</div>
+          <div class="g-caption"><h4>Primăvara la Orhei</h4><p>Dealuri înflorite</p></div>
+        </div>
+        <div class="g-item" data-category="cultura" data-title="Festival de Folclor" data-desc="Tradiții moldovenești vii — port popular, muzică și dans">
+          <div class="g-inner gc5">
+            <img src="../images/festival-folclor.jpg" alt="festival-folclor">
+          </div>
+          <div class="g-category">Cultură</div>
+          <div class="g-caption"><h4>Festival de Folclor</h4><p>Tradiții moldovenești</p></div>
+        </div>
+        <div class="g-item" data-category="monumente" data-title="Cetatea Medievală" data-desc="Ruinele cetății de apărare din sec. XIV–XV">
+          <div class="g-inner gc6">
+            <img src="../images/cetate-medievala.jpg" alt="cetate-medievala">
+          </div>
+          <div class="g-category">Monumente</div>
+          <div class="g-caption"><h4>Cetatea Medievală</h4><p>Ruinele istorice</p></div>
+        </div>
+        <div class="g-item" data-category="viata" data-title="Piața Centrală" data-desc="Viața cotidiană în inima orașului Orhei">
+          <div class="g-inner gc7">
+            <img src="../images/piata-centrala.jpg" alt="piata-centrala">
+          </div>
+          <div class="g-category">Viață</div>
+          <div class="g-caption"><h4>Piața Centrală</h4><p>Viața cotidiană</p></div>
+        </div>
+        <div class="g-item" data-category="natura" data-title="Apus de Soare" data-desc="Apus spectacular pe malul Răutului — culori de neuitat">
+          <div class="g-inner gc8">
+            <img src="../images/apus-de-soare.jpg" alt="apus-de-soare">
+          </div>
+          <div class="g-category">Natură</div>
+          <div class="g-caption"><h4>Apus de Soare</h4><p>Pe malul Răutului</p></div>
+        </div>
+        <div class="g-item" data-category="cultura" data-title="Muzică Populară" data-desc="Sunetele tradiționale ale Moldovei — cobza, nai și vocea">
+          <div class="g-inner gc9">
+            <img src="../images/muzica-populara.jpeg" alt="muzica-populara">
+          </div>
+          <div class="g-category">Cultură</div>
+          <div class="g-caption"><h4>Muzică Populară</h4><p>Sunete tradiționale</p></div>
+        </div>
+        <div class="g-item" data-category="scoala iubita" data-title="Școala mea iubită" data-desc="Instituția Publică Liceul Teoretic ”Alecu Russo„ Orhei">
+          <div class="g-inner gc10">
+            <img src="../images/liceul-alecu-russo.jpg" alt="liceul-alecu-russo">
+          </div>
+          <div class="g-category">Școala mea iubită</div>
+          <div class="g-caption"><h4>Școala mea iubită</h4><p>Instituția Publică Liceul Teoretic ”Alecu Russo„ Orhei</p></div>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <!-- PHOTO INFO STRIP -->
+  <div class="photo-info-strip">
+    <div class="container">
+      <div class="photo-info-grid">
+        <div class="photo-info-item reveal-l">
+          <h4>📸 Fotografiind Orhei</h4>
+          <p>Cele mai bune ore pentru fotografii sunt dimineața devreme (06:00–09:00) și seara (17:00–20:00), când lumina naturală creează efecte spectaculoase pe stâncile Răutului.</p>
+        </div>
+        <div class="photo-info-item reveal">
+          <h4>📍 Locuri Recomandate</h4>
+          <p>Platoul de deasupra mănăstirii rupestre, podul de la Butuceni, malul drept al Răutului la apus — toate oferă cadre fotografice excepționale.</p>
+        </div>
+        <div class="photo-info-item reveal-r">
+          <h4>🗺️ Harta Fotografică</h4>
+          <p>Descarcă harta interactivă a punctelor de belvedere și a locurilor emblematice din zona Orheiului Vechi de pe site-ul oficial al rezervației.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lb-content">
+      <button class="lb-close" onclick="closeLightbox()">✕</button>
+      <div class="lb-img-display" id="lbDisplay">🗿</div>
+    </div>
+    <div class="lb-caption" id="lbCaption">
+      <h3 id="lbTitle">Titlu</h3>
+      <p id="lbDesc">Descriere</p>
+    </div>
+    <div class="lb-arrows">
+      <button class="lb-arrow" onclick="lbPrev()">← Anterior</button>
+      <button class="lb-arrow" onclick="lbNext()">Următor →</button>
+    </div>
+  </div>
+ 
+</div><!-- /page-galerie -->
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">⚜ Orhei</span>
+        <p>Orhei — reședință de raion în Republica Moldova, situat pe malul râului Răut, la 40 km nord de Chișinău. Un oraș cu over 600 de ani de istorie, patrimoniu cultural excepțional și oameni primitori.</p>
+        <div class="footer-social">
+          <div class="social-btn">
+            <a href="https://r.mtdv.me/videos/politica-de-cnof">📘</a>
+          </div>
+          <div class="social-btn">
+            <a href="https://r.mtdv.me/videos/politica-de-cnof">📸</a>
+          </div>
+          <div class="social-btn">
+            <a href="https://r.mtdv.me/videos/politica-de-cnof">🐦</a>
+          </div>
+          <div class="social-btn">
+            <a href="https://r.mtdv.me/videos/politica-de-cnof">▶️</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigare</h4>
+        <ul>
+          <li><button onclick="showPage('acasa')">Acasă</button></li>
+          <li><button onclick="showPage('istorie')">Istorie</button></li>
+          <li><button onclick="showPage('atractii')">Atracții</button></li>
+          <li><button onclick="showPage('galerie')">Galerie Foto</button></li>
+          <li><button onclick="showPage('contact')">Contact</button></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Atracții</h4>
+        <ul>
+          <li><button onclick="showPage('atractii')">Orheiul Vechi</button></li>
+          <li><button onclick="showPage('atractii')">Mănăstirea Curchi</button></li>
+          <li><button onclick="showPage('atractii')">Râul Răut</button></li>
+          <li><button onclick="showPage('atractii')">Cultura & Arte</button></li>
+          <li><button onclick="showPage('atractii')">Gastronomie locală</button></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Rapid</h4>
+        <div class="footer-contact-item"><span>📍</span><span>Orhei, MD-3500</span></div>
+        <div class="footer-contact-item"><span>📞</span><span>+373 235 2-XX-XX</span></div>
+        <div class="footer-contact-item"><span>✉️</span><span>info@orhei.md</span></div>
+        <div class="footer-contact-item"><span>🌐</span><span>www.orhei.md</span></div>
+        <div style="margin-top:20px;">
+          <button onclick="showPage('contact')" style="background:var(--red);color:white;border:none;padding:10px 20px;cursor:pointer;font-family:'Lato',sans-serif;font-weight:700;font-size:.82rem;text-transform:uppercase;letter-spacing:1px;">Contactează-ne →</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Orhei – Localitatea mea de baștință. Proiect școlar.</span>
+      <div class="footer-bottom-links">
+        <button>Politică de confidențialitate</button>
+        <button>Termeni și condiții</button>
+        <button>Hartă site</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../javascript/script.js"></script>
+</body>
+</html>
